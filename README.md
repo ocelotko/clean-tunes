@@ -1,15 +1,16 @@
 # Clean Tunes
 
-This Python script uses the Acoustid API to identify and organize your music files. It automatically fetches metadata like artist, title, and album, then renames the files and updates their ID3 tags for a cleaner music library.
+This Python script helps you clean up your music library by automatically identifying **MP3** and **WAV** files, fetching their metadata, and renaming them. It uses the **Acoustid API** and audio fingerprinting to ensure accurate song identification, even on files with missing or incorrect tags.
 
 ---
 
 ## Features
 
 - **Automatic Tagging**: Uses audio fingerprints to accurately identify your songs.
-- **Metadata Updates**: Writes artist, title, album, and year directly to your MP3 file's ID3 tags.
-- **File Renaming**: Renames files to a consistent format (`Artist - Title.mp3`).
+- **Metadata Updates**: Writes artist, title, album, and year directly to your music file's ID3 tags.
+- **File Renaming**: Renames files to a consistent format (`Artist - Title.mp3` or `Artist - Title.wav`).
 - **Cross-Platform**: Works on Windows and Linux.
+- **Multi-Format Support**: Processes both **MP3** and **WAV** files.
 
 ---
 
@@ -81,7 +82,7 @@ You'll need to install the required Python libraries and, for Linux users, the `
     ```
 
     - Paste the API key you obtained in Step 1.
-    - Specify the path to the folder containing the MP3 files you want to organize.
+    - Specify the path to the folder containing the MP3/WAV files you want to organize.
 
 3.  **Save the file**.
 4.  **Run the script** from your terminal:
@@ -89,4 +90,4 @@ You'll need to install the required Python libraries and, for Linux users, the `
     python main.py
     ```
 
-The script will now go through each MP3 file in your specified folder, identify it, and update its metadata and filename.
+The script will now go through each music file in your specified folder, identify it, and update its metadata and filename.

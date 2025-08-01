@@ -16,7 +16,7 @@ def process_music_folder(api_key, folder_path):
         return
 
     for filename in os.listdir(folder_path):
-        if filename.endswith(".mp3"):
+        if filename.endswith((".mp3", ".wav")):
             file_path = os.path.join(folder_path, filename)
             
             try:
